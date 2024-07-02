@@ -1,0 +1,4 @@
+{
+    "java.debug.settings.onBuildFailureProceed": false,
+    "java.jdt.ls.java.home": "/data/data/com.termux/files/usr/lib/jvm/java-17-openjdk"
+}
