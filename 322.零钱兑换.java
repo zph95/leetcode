@@ -56,7 +56,25 @@
 // @lc code=start
 class Solution {
     public int coinChange(int[] coins, int amount) {
-
+        // dp[i]表示凑成金额i所需的最少硬币个数
+        int[] dp = new int[amount + 1];
+        // 初始化dp数组
+        Arrays.fill(dp, amount + 1);
+        dp[0] = 0;
+        // 遍历金额
+        for (int i = 1; i <= amount; i++) {
+            // 遍历硬币
+            for (int coin : coins) {
+                // 如果硬币面值大于金额i，则跳过
+                if (coin > i) {
+                    continue;
+                }
+                // 状态转移方程
+                dp[i] = Math.min(dp[i], dp[i - coin] + 1);
+            }
+        }
+        // 如果dp[amount] > amount，则说明凑不出来，返回-1
+        return dp[amount] > amount ? -1 : dp[amount];
     }
 }
 // @lc code=end

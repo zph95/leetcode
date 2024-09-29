@@ -54,7 +54,7 @@
  * 
  * 
  * 提示：
- * 
+ * d
  * 
  * 1 
  * 1 
@@ -65,7 +65,30 @@
 // @lc code=start
 class Solution {
     public String getPermutation(int n, int k) {
+        // 1. 计算阶乘
+        int[] factorial = new int[n];
+        factorial[0] = 1;
+        for (int i = 1; i < n; i++) {
+            factorial[i] = factorial[i - 1] * i;
+        }
 
+        // 2. 初始化数字
+        List<Integer> nums = new ArrayList<>();
+        for (int i = 1; i <= n; i++) {
+            nums.add(i);
+        }
+
+        // 3. 计算排列
+        k--;
+        StringBuilder sb = new StringBuilder();
+        for (int i = n - 1; i >= 0; i--) {
+            int index = k / factorial[i];
+            sb.append(nums.get(index));
+            nums.remove(index);
+            k %= factorial[i];
+        }
+
+        return sb.toString();
     }
 }
 // @lc code=end

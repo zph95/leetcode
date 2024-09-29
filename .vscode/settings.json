@@ -3,7 +3,7 @@
     "java.jdt.ls.java.home": "/data/data/com.termux/files/usr/lib/jvm/java-17-openjdk",
     "spring-boot.ls.java.home": "/data/data/com.termux/files/usr/lib/jvm/java-17-openjdk",
     "files.watcherExclude": {
-        "**/target": true
+      "**/target": true
     },
     "java.configuration.runtimes": [
         {
@@ -17,5 +17,6 @@
         },
       ],
       "java.configuration.updateBuildConfiguration": "interactive",
-      "java.compile.nullAnalysis.mode": "automatic"
+      "java.compile.nullAnalysis.mode": "automatic",
+      "leetcode.nodePath": "/data/data/com.termux/files/usr/opt/nodejs-12/bin",
 }
