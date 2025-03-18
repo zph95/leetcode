@@ -55,12 +55,20 @@
 
 // @lc code=start
 class Solution {
-    public int lengthOfLongestSubstring(String s) {
-        return 0;
-    }
-    public static void main(String[] args) {
-        System.out.println("test");
+    int n = s.length(); // 字符串长度
+    int ans = 0; // 记录最长子串长度
+    int[] index = new int[128]; // 记录字符上一次出现的位置（ASCII字符集）
 
+    for (int j = 0, i = 0; j < n; j++) { // j 是右指针，i 是左指针
+        i = Math.max(index[s.charAt(j)], i); // 更新左指针，确保窗口内无重复字符
+        ans = Math.max(ans, j - i + 1); // 更新最长子串长度
+        index[s.charAt(j)] = j + 1; // 更新当前字符的最新位置
+    }
+    return ans; // 返回结果
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        String testString = "abcabcbb";
+        System.out.println(solution.lengthOfLongestSubstring(testString)); // 测试输出
     }
 }
 // @lc code=end

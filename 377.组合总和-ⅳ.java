@@ -61,6 +61,10 @@
  */
 
 // @lc code=start
+
+import java.util.Arrays;
+import java.util.HashMap;
+
 class Solution {
 
     HashMap<Integer,Integer> countMap=new HashMap<>();

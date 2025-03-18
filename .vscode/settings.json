@@ -1,22 +1,8 @@
 {
     "java.debug.settings.onBuildFailureProceed": false,
-    "java.jdt.ls.java.home": "/data/data/com.termux/files/usr/lib/jvm/java-17-openjdk",
-    "spring-boot.ls.java.home": "/data/data/com.termux/files/usr/lib/jvm/java-17-openjdk",
     "files.watcherExclude": {
       "**/target": true
     },
-    "java.configuration.runtimes": [
-        {
-          "name": "JavaSE-11",
-          "path": "/data/data/com.termux/files/usr/lib/jvm/java-11-openjdk",
-          "default": true
-        },
-        {
-          "name": "JavaSE-17",
-          "path": "/data/data/com.termux/files/usr/lib/jvm/java-17-openjdk"
-        },
-      ],
       "java.configuration.updateBuildConfiguration": "interactive",
       "java.compile.nullAnalysis.mode": "automatic",
-      "leetcode.nodePath": "/data/data/com.termux/files/usr/opt/nodejs-12/bin",
 }
