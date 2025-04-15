@@ -1,0 +1,42 @@
+SHELL2 打印文件的最后5行
+简单  通过率：50.52%  时间限制：1秒  空间限制：256M
+知识点：
+shell
+描述
+查看日志的时候，经常会从文件的末尾往前查看，请你写一个bash shell脚本以输出一个文本文件nowcoder.txt中的最后5行。
+示例:
+假设 nowcoder.txt 内容如下：
+#include<iostream>
+using namespace std;
+int main()
+{
+int a = 10;
+int b = 100;
+cout << "a + b:" << a + b << endl;
+return 0;
+}
+你的脚本应当输出：
+int a = 10;
+int b = 100;
+cout << "a + b:" << a + b << endl;
+return 0;
+}
+示例1
+输入：
+#include<iostream>
+using namespace std;
+int main()
+{
+int a = 10;
+int b = 100;
+cout << "a + b:" << a + b << endl;
+return 0;
+}
+复制
+输出：
+int a = 10;
+int b = 100;
+cout << "a + b:" << a + b << endl;
+return 0;
+}
+复制
