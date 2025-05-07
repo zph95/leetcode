@@ -1,3 +1,4 @@
 .vsocde/
 .lcpr_data/
 **/**.jar
+vsix/**
