@@ -2,3 +2,5 @@
 .lcpr_data/
 **/**.jar
 vsix/**
+.metals/
+.bloop/
